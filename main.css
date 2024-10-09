@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+  }
+  
+  body, button, a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+   #background {
+     position: fixed;
+     inset: 0;
+     z-index: -1;
+  
+     width: 100%;
+     height: 100vh;
+   }
+  
+   #background video {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+  
+   #background::after {
+       content: '';
+       width: inherit;
+       height: inherit;
+       position: fixed;	
+       inset: 0;
+       background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+   }
+  
+.section-one {
+    text-align: center;
+    font-family: 'karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .section-two {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgb(128, 47, 47);
+  }
+
+  #section-three {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+  .section-four {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .karla-<uniquifier> {
+    font-family: "Karla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .container {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  .logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #EDF1F7;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 20px;
+  }
+  
+  .buttons {
+    display: 10px 20px;
+    font-size: 16px;
+    font-family: 'karla', sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .saiba-mais {
+    background-color: white;
+    color: red;
+    font-family: 'karla', sans-serif;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+  }
+  
+  .download {
+    background-color: #ff0000;
+    color: white;
+    font-family: 'karla', sans-serif;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }  
